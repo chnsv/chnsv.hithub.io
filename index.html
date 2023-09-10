@@ -47,9 +47,9 @@
     <h1>Форма HTML</h1>
     <form action="/" method="POST">
     <label for="FIO">ФИО:</label></br>
-    <input type="text" name="fio" value="Введите ФИО" required></br>
+    <input type="text" name="fio" placeholder="Введите ФИО" required></br>
     <label for="phone">Телефон:</label></br>
-    <input type="tel" name="phone" required></br>
+    <input type="tel" name="phone" placeholder="+7(___)___-__-__" required></br>
     <label for="email">E-mail</label></br>
     <input type="email" name="email" placeholder="Введите вашу почту" required></br>
     <label for="BD">Дата рождения</label></br>
@@ -59,8 +59,6 @@
       <label>
         <input type="radio" name="gender" value="мужской">мужской
         <div class="radio-control male"></div>
-      </label>
-      <label>
         <input type="radio" name="gender" value="женский">женский
         <div class="radio-control female"></div>
       </label>
