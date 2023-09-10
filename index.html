@@ -22,7 +22,7 @@
       <br>
       <img src="b.png" alt = "picture" usemap = "#knopka"> 
       <map name="knopka">
-        <area shape = "rect" coords = "505,505,80,80" href="http://kubsu.ru/" alt="Красный квадрат">
+        <area shape = "rect" coords = "80,80,505,505" href="http://kubsu.ru/" alt="Красный квадрат">
         <area shape = "circle" coords = "247,247,50" href="http://kubsu.ru/" alt="Красный круг">
       </map>
       <br>
@@ -43,5 +43,53 @@
     <br/> 
     <br/> 
   <p id="element">Фрагмент текущей страницы</p>
+  <br>
+  <img src="form.png">
+    <br>
+    <h1>Форма HTML</h1>
+    <form action="/" method="POST">
+    <label for="FIO">ФИО:</label></br>
+    <input type="text" name="fio" required>
+    <label for="phone">Телефон:</label></br>
+    <input type="tel" name="phone" required>
+    <label for="email">E-mail</label></br>
+    <input type="email" name="email" required>
+    <label for="BD">Дата рождения</label></br>
+    <input type="date" name="BD" required>
+    <div class="radio">
+      <span>Пол</span>
+      <label>
+        <input type="radio" name="gender" value="мужской">мужской
+        <div class="radio-control male"></div>
+      </label>
+      <label>
+        <input type="radio" name="gender" value="женский">женский
+        <div class="radio-control female"></div>
+      </label>
+    </div>
+    <div>
+      <label for="LP">Язык программирования:</label>
+      <select name="program">
+        <option>Выберите любимый ЯП:</option>
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Haskel">Haskel</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+      </select>
+      <div class="select-arrow"></div> 
+    </div>
+      <label for="biography">Биография:</label>
+      <textarea id="biography" name="biography" required></textarea>
+      <br />
+      <label><input type="checkbox" checked="checked" name="check-1"/>C контрактом ознакомлен(а)</label><br/>
+      <input type="submit" value="Отправить"/>
+    </form>
   </body>
 </html>
