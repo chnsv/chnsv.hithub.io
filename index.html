@@ -76,25 +76,26 @@
     <input name="fio" type = "text" placeholder="Введите ФИО" />
     </label><br />
       
-    <label for="phone">Телефон:</label>
-    <input type="tel" name="phone" placeholder="+7(___)___-__-__" required>
+    <label>Телефон:<br />
+    <input name="phone" type="tel" placeholder="+7(___)___-__-__" />
+    </label><br />
       
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" placeholder="Введите вашу почту" required>
-      
-    <label for="BD">Дата рождения</label>
-    <input type="date" name="BD" required>
+    <label>E-mail:<br />
+    <input name="email" type="email" placeholder="Введите вашу почту" />
+    </label><br />
+
+    <label>Дата рождения<br />
+    <input name="BD" type="date">
+    </label><br />
 
     <br />
     <label><input type="radio" checked="checked"
     name="radio-group-1" value="Мужской" />Мужской</label>
     <label><input type="radio"
     name="radio-group-1" value="Женский" />Женский</label><br />
-      
-    <div>
-      <label for="LP">Язык программирования:</label>
-      <select name="program">
-        <option>Выберите любимый ЯП:</option>
+
+    <label>Любимый язык программирования:<br />
+      <select name="field-name-4[]" multiple="multiple">
         <option value="Pascal">Pascal</option>
         <option value="C">C</option>
         <option value="C++">C++</option>
@@ -106,13 +107,15 @@
         <option value="Clojure">Clojure</option>
         <option value="Prolog">Prolog</option>
         <option value="Scala">Scala</option>
-      </select>
-      <div class="select-arrow"></div> 
-    </div>
+        </select>
+      </label><br />
       
-      <label for="biography">Биография:</label>
-      <textarea id="biography" name="biography" required></textarea>
-      
+      <label>Биография:<br />
+      <textarea name="biography">Введите свою биографию:</textarea>
+      </label><br />
+
+      <br />
+
       <label><input type="checkbox" checked="checked" name="check-1"/>C контрактом ознакомлен(а)</label>
       <input type="submit" value="Отправить"/>
     </form>
