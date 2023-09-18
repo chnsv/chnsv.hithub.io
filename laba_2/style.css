@@ -6,6 +6,21 @@ header {
     padding:12px; 
     height: 95px;
 }
+div {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.list a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #43437f;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: rgb(201, 201, 210);
+    border-bottom: 5px solid #1a1a60;
+  }
+  
 body {
     background-color: rgb(233, 233, 207);
 }
