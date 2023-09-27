@@ -149,7 +149,7 @@ footer {
     color: #fff;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) {
 
     .vibor {
         display: flex;
@@ -162,6 +162,7 @@ footer {
         flex-flow: row;
         flex-direction: column;
         background: #2c3951bd;
+        position: absolute;
     }
 
     .Table {
