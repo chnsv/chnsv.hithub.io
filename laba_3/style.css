@@ -148,7 +148,7 @@ footer {
     color: #fff;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
 
     .vibor {
         display: flex;
@@ -160,7 +160,7 @@ footer {
         width: 100%;
         display: flex;
         flex-flow: row;
-        flex-direction: column;
+        flex-direction: row;
         background: #2c3951bd;
         position: absolute;
     }
