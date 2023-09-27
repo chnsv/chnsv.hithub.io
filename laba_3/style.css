@@ -74,7 +74,6 @@ body {
 
 .list {
     width: 100%;
-    background: #888888;
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -156,7 +155,8 @@ footer {
         flex-direction: column;
     }
 
-    .list{
+    .list {
+        margin-top: 0;
         width: 100%;
         display: flex;
         flex-flow: row;
@@ -178,5 +178,4 @@ footer {
         height: 50px;
         flex-shrink: 0;
     }
-
 }
