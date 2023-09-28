@@ -1,12 +1,5 @@
 header, footer, nav, article {display: block;}
 
-html{
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
-    margin: 0;
-}
-
 header {
     width: 100%;
     color:rgb(57, 58, 47);
@@ -18,9 +11,10 @@ header {
 
 .golova {
     display: flex;
+    width: 100%;
 }
 
-#nazv {
+#nazv{
     flex-grow: 4;
     padding: 5px 20px 5px 5px;
     width: 372px;
@@ -44,7 +38,6 @@ header {
 
 .Table {
     order: -1;
-    display: flex;
     flex-direction: column;
     font-size: 0.9rem;
     color: #1c1717;
@@ -75,18 +68,24 @@ img {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     background-color: rgb(233, 233, 207);
 }
 
-.list{
-    font-size: 12px;
+nav {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.list {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content:flex-end ;
+    flex-direction: row;
+    float: right;
 }
 
 .list a {
+    width: 100%;
     text-decoration: none;
     color: #43437f;
     display: inline-block;
@@ -153,21 +152,36 @@ footer {
     color: #fff;
 }
 
-@media screen and(min-width: 800px) {
+@media screen and (min-width: 800px) {
 
     .vibor {
         display: flex;
         flex-direction: column;
     }
+    .list {
 
-    .list{
+    }
+    /*.list {
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        left:0px;
+    }*/
+    /*.list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        float: left;
+    }*/
+    /*.list {
+        margin-top: 0;
+        width: 100%;
         display: flex;
         flex-flow: row;
-        margin: 0;
-        flex-direction: column;
+        flex-direction: row;
         background: #2c3951bd;
         position: absolute;
-    }
+    }*/
 
     .Table {
         order: 0;
@@ -181,6 +195,6 @@ footer {
         width: 246px;
         height: 50px;
         flex-shrink: 0;
+        text-align: left;
     }
-
 }
