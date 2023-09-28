@@ -1,5 +1,12 @@
 header, footer, nav, article {display: block;}
 
+html{
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0;
+}
+
 header {
     width: 100%;
     color:rgb(57, 58, 47);
@@ -11,17 +18,16 @@ header {
 
 .golova {
     display: flex;
-    width: 100%;
 }
 
-#nazv{
+#nazv {
     flex-grow: 4;
     padding: 5px 20px 5px 5px;
     width: 372px;
     height: 57px;
     flex-shrink: 0;
     align-self:flex-end;
-    text-align: left;
+    text-align: right;
     position: static;
 }
 
@@ -38,6 +44,7 @@ header {
 
 .Table {
     order: -1;
+    display: flex;
     flex-direction: column;
     font-size: 0.9rem;
     color: #1c1717;
@@ -72,16 +79,14 @@ body {
     background-color: rgb(233, 233, 207);
 }
 
-.list {
-    width: 100%;
+.list{
     font-size: 12px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content:flex-end ;
 }
 
 .list a {
-    width: 100%;
     text-decoration: none;
     color: #43437f;
     display: inline-block;
@@ -148,19 +153,18 @@ footer {
     color: #fff;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and(min-width: 800px) {
 
     .vibor {
         display: flex;
         flex-direction: column;
     }
 
-    .list {
-        margin-top: 0;
-        width: 100%;
+    .list{
         display: flex;
         flex-flow: row;
-        flex-direction: row;
+        margin: 0;
+        flex-direction: column;
         background: #2c3951bd;
         position: absolute;
     }
@@ -178,4 +182,5 @@ footer {
         height: 50px;
         flex-shrink: 0;
     }
+
 }
