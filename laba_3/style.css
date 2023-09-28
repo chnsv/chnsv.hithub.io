@@ -14,7 +14,7 @@ header {
     width: 100%;
 }
 
-#nazv{
+#nazv {
     flex-grow: 4;
     padding: 5px 20px 5px 5px;
     width: 372px;
@@ -31,7 +31,7 @@ header {
     margin-right: 10px;
 }
 
-.vibor{
+.vibor {
     display: flex;
     flex-direction: column;
 }
@@ -72,16 +72,8 @@ body {
     background-color: rgb(233, 233, 207);
 }
 
-nav {
-    position: absolute;
-    top: 15px;
-    right: 0;
-}
 .list {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    float: right;
 }
 
 .list a {
@@ -159,27 +151,15 @@ footer {
         flex-direction: column;
     }
 
-    /*.list {
+    .list {
         list-style: none;
         position: absolute;
-        top: 10px;
-        left:0px;
-    }*/
-    /*.list {
         display: flex;
         flex-direction: row;
-        width: 100%;
-        float: left;
-    }*/
-    /*.list {
-        margin-top: 0;
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        flex-direction: row;
-        background: #2c3951bd;
         position: absolute;
-    }*/
+        top: 15px;
+        right: 0;
+    }
 
     .Table {
         order: 0;
@@ -189,7 +169,7 @@ footer {
         height: auto;
     }
 
-    #nazv{
+    #nazv {
         width: 246px;
         height: 50px;
         flex-shrink: 0;
