@@ -39,7 +39,7 @@ img {
     max-width: 800px;
 }
 
-html, body {
+body {
     height: 100%;
     margin: 0;
     background-color: rgb(233, 233, 207);
@@ -91,7 +91,6 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-
     .list {
         list-style: none;
         position: absolute;
