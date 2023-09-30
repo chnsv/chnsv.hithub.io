@@ -21,6 +21,9 @@ header {
     position: static;
 }
 
+table {
+    font-size: 14px;
+}
 .logo {
     width: 100px;
     float: left;
