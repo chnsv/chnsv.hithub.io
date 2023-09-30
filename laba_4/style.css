@@ -1,17 +1,13 @@
 header, footer, nav, article {display: block;}
 
 header {
-    width: 100%;
     color:rgb(57, 58, 47);
     background-color:#2c3951bd;
     padding:12px;
-    height: auto;
-    justify-content: center;
 }
 
 .golova {
     display: flex;
-    width: 100%;
 }
 
 #nazv {
@@ -43,7 +39,8 @@ img {
     max-width: 800px;
 }
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
     background-color: rgb(233, 233, 207);
 }
