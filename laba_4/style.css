@@ -31,16 +31,6 @@ header {
     margin-right: 10px;
 }
 
-/*.Table {
-    order: -1;
-    flex-direction: column;
-    font-size: 0.9rem;
-    color: #1c1717;
-    margin-top: 1rem;
-    height: auto;
-    align-items:center;
-}*/
-
 .menu {
     font-size: 0.9rem;
     color: #2c3951bd;
@@ -113,10 +103,6 @@ footer {
         float: left;
         text-align: left;
     }
-
-    /*.Table {
-        order: 0;
-    }*/
 
     #nazv {
         width: 246px;
