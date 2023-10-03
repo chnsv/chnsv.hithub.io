@@ -86,8 +86,6 @@ a:active {
 }
 
 footer {
-    display:flex;
-    justify-content: center;
     padding: 5px;
     background-color: #5e562a;
     color: #fff;
