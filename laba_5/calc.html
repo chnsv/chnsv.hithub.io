@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Калькулятор расчета стоимости</title>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <h2>Калькулятор расчета стоимости заказа</h2>
+            <p id = "message">Выберете нужный товар и введите кол-во!</p>
+            <select id="select1">
+                <option value="0">Выбрать</option>
+                <option value="235">Кружка</option>
+                <option value="135">Тарелка</option>
+                <option value="260">Салатница</option>
+                <option value="400">Терка</option>
+                <option value="353">Бокал</option>
+                <option value="1236">Кастрюля</option>
+            </select>
+            <input id="count" type="number" placeholder="Введите кол-во товара">
+            <button id="stoimost" onclick="return calc();">Расчитать</button>
+            <div>
+                Стоимость заказа = <span id="result"></span>
+            </div>
+        </main>
+    </body>
+</html>
