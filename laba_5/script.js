@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function validate() {
     var count = document.getElementById("count").value;
-    var o = /^[\d]$/;
+    var o = /^\d{1,}$/;
     var valid = o.test(count);
 
     if (valid) {
