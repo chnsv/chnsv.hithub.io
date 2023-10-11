@@ -15,28 +15,28 @@ window.addEventListener('DOMContentLoaded', function (event) {
     console.log(select.value);
     
     if (select.value == "0") {
-    vibor.style.display = "none";
-    check.style.display = "none";
-    radios.style.display = "none";
-    count.style.display = "none";
+      vibor.style.display = "none";
+      check.style.display = "none";
+      radios.style.display = "none";
+      count.style.display = "none";
     }
     if (select.value == "5000") {
-    vibor.style.display = "none";
-    check.style.display = "none";
-    radios.style.display = "block";
-    count.style.display = "block";
+      vibor.style.display = "none";
+      check.style.display = "none";
+      radios.style.display = "block";
+      count.style.display = "block";
     }
     if (select.value == "2") {
-    vibor.style.display = "block";
-    check.style.display = "none";
-    radios.style.display = "block";
-    count.style.display = "block";
+      vibor.style.display = "block";
+      check.style.display = "none";
+      radios.style.display = "block";
+      count.style.display = "block";
     }
     if (select.value == "10000") {
-    vibor.style.display = "none";
-    check.style.display = "block";
-    radios.style.display = "block";
-    count.style.display = "block";
+      vibor.style.display = "none";
+      check.style.display = "block";
+      radios.style.display = "block";
+      count.style.display = "block";
     }
   });
   
