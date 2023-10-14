@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   var stoimost = document.getElementById("stoimost");
   stoimost.addEventListener("click", calc);
-});
+});*/
   
 window.addEventListener('DOMContentLoaded', function (event) {
   let s = document.getElementsByName("myselect");
@@ -64,36 +64,31 @@ function validate() {
 }
   
 function calc() {
-  var typet = document.getElementsByName("myselect");
+  var typet = document.getElementsByName("myselect").value;
   var name = document.getElementById("select1");
-  var dostavka = document.getElementById("myradios");
   var usluga = document.getElementById("checkboxes");
-  var count = document.getElementById("count");
   var result = document.getElementById("result");
+  var r;
   
-  var price = 0;
-  
-  /*if (typet.value == "5000") {*/
-  if(validate()){
-    price += parseInt(typet.options[typet.selectedIndex].value);
-    price += (dostavka.checked == true) ? parseInt(dostavka.value) : 0;
-    price = parseInt(count.value) * price;
-    result.innerHTML = price;
+  if(validate()) {
+    if(typet === "5000") {
+      r = calcsertif();
+    }
+    result.innerHTML = r;
   }
-  
-  /*if (validate()) {
-  if(typet.value == "0"){
-  price += parseInt(typet.options[typet.selectedIndex].value);
-  
-  }
-  price += parseInt(typet.options[typet.selectedIndex].value);
-  price += parseInt(name.options[name.selectedIndex].value);
-  price += parseInt(dostavka.options[dostavka.selectedIndex].value);
-  price += parseInt(usluga.options[usluga.selectedIndex].value);
-  price = parseInt(count.value) * price;
-  result.innerHTML = price;
-  } */
+
   else {
     window.alert("GG");
   }
+}
+function calcsertif(){
+  var typet = document.getElementsByName("myselect").value;
+  var count = document.getElementById("count");
+  var dostavka = document.getElementById("myradios");
+
+  var price = 0;
+  price += parseInt(typet.options[typet.selectedIndex].value);
+  price += (dostavka.checked == true) ? parseInt(dostavka.value) : 0;
+  price = parseInt(count.value) * price;
+  return price;
 }
