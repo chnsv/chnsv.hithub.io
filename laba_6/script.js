@@ -1,11 +1,12 @@
 /*document.addEventListener("DOMContentLoaded", function () {
-  var stoimost = document.getElementById("stoimost");
-  stoimost.addEventListener("click", calc);
+  var r = document.getElementById("result");
+  r.addEventListener("change", calc);
 });*/
-  
+
 window.addEventListener('DOMContentLoaded', function (event) {
   let s = document.getElementsByName("myselect");
-  s[0].addEventListener("change", function(event) {
+  s.addEventListener("change", function(event)
+ {
     let select = event.target;
     let vibor = document.getElementById("select1");
     let check = document.getElementById("checkboxes");
@@ -20,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       radios.style.display = "none";
       count.style.display = "none";
     }
-    if (select.value == "5000") {
+    if (select.value == "1") {
       vibor.style.display = "none";
       check.style.display = "none";
       radios.style.display = "block";
@@ -32,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
       radios.style.display = "block";
       count.style.display = "block";
     }
-    if (select.value == "10000") {
+    if (select.value == "3") {
       vibor.style.display = "none";
       check.style.display = "block";
       radios.style.display = "block";
@@ -62,33 +63,84 @@ function validate() {
   document.getElementById("message").innerHTML = window.output;
   return valid;
 }
-  
+
+/*document.addEventListener("DOMContentLoaded", function(){
+  document.getElementsById("result").onchange = function() {
+    document.getElementsByName("myselect").value
+  };
+});*/
+
+
 function calc() {
-  var typet = document.getElementsByName("myselect").value;
-  var name = document.getElementById("select1");
-  var usluga = document.getElementById("checkboxes");
+  var typet = document.getElementsByName("myselect").item(0).selectedIndex;
   var result = document.getElementById("result");
-  var r;
+  var t = typet;
+  var res;
+  console.log(t);
   
   if(validate()) {
-    if(typet === "5000") {
-      r = calcsertif();
+    if(t == "1") {
+      res = calcsertif();
+      result.innerHTML = res;
     }
-    result.innerHTML = r;
+    if(t == "2") {
+      res = calcigr();
+      result.innerHTML = res;
+    }
+    if(t == "3") {
+      res = calcflow();
+      result.innerHTML = res;
+    }
   }
-
   else {
     window.alert("GG");
   }
 }
+
 function calcsertif(){
-  var typet = document.getElementsByName("myselect").value;
   var count = document.getElementById("count");
   var dostavka = document.getElementById("myradios");
 
   var price = 0;
-  price += parseInt(typet.options[typet.selectedIndex].value);
+  var cena = 5000;
+
+  price += cena * parseInt(count.value);
   price += (dostavka.checked == true) ? parseInt(dostavka.value) : 0;
-  price = parseInt(count.value) * price;
+  console.log(price);
+  console.log('Hello, World!');
+  return price;
+}
+
+function calcigr(){
+  var count = document.getElementById("count");
+  var dostavka = document.getElementById("myradios");
+  var igrush = document.getElementById("select1");
+
+  var price = 0;
+
+  price += parseInt(igrush.options[igrush.selectedIndex].value);
+  price += parseInt(count.value) * price;
+  price += (dostavka.checked == true) ? parseInt(dostavka.value) : 0;
+  console.log(price);
+  console.log('Hello, World!');
+  return price;
+}
+
+function calcflow(){
+  var count = document.getElementById("count");
+  var dostavka = document.getElementById("myradios");
+  var obertka = document.getElementByName("prop1");
+  var otkritka = document.getElementByName("prop2");
+
+  var price = 0;
+  var cena = 3000;
+
+  if(obertka.checked){
+    price += cena * parseInt(count.value);
+    price += (dostavka.checked == true) ? parseInt(dostavka.value) : 0;
+
+  }
+  console.log(price);
+  console.log('Hello, World!');
   return price;
 }
