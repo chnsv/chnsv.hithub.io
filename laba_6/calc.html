@@ -31,20 +31,18 @@
                     <option value="4150">Басик</option>
                 </select>
                 
-                <input id="count" type="number" placeholder="Введите кол-во товара">
+                <input id="count" type="number" placeholder="Введите кол-во товара" onchange="calc()">
 
                 <div class="myradios" id="myradios">Доставка:<br>
-                    <label><input type="radio" name="myradio" value="200">Доставка курьером до подъезда</label><br>
-                    <label><input type="radio" name="myradio" value="300">Доставка курьером до двери</label><br>
-                    <label><input type="radio" name="myradio" value="0">Самовывоз</label>
+                    <label><input type="radio" name="myradio" value="200" onchange="calc()">Доставка курьером до подъезда</label><br>
+                    <label><input type="radio" name="myradio" value="300" onchange="calc()">Доставка курьером до двери</label><br>
+                    <label><input type="radio" name="myradio" value="0" onchange="calc()">Самовывоз</label>
                 </div>
 
                 <div class="checkboxes" id="checkboxes">Выберете услуги:
-                    <label><input type="checkbox" name="prop1" value="150"> Обертка</label>
-                    <label><input type="checkbox" name="prop2" value="40"> Открытка</label>
+                    <label><input type="checkbox" name="prop1" value="150" onchange="calc()"> Обертка</label>
+                    <label><input type="checkbox" name="prop2" value="40" onchange="calc()"> Открытка</label>
                   </div>
-
-                <button id="stoimost" onclick="return calc();">Расчитать</button>
                 
                 <div>
                     Стоимость заказа = <span id="result"></span>
