@@ -15,14 +15,14 @@
 
                 <select name="myselect">
                     <option value="0">Выберете тип товара</option>
-                    <option value="5000">Подарочный сертификат</option>
+                    <option value="1">Подарочный сертификат</option>
                     <option value="2">Мягкие игрушки</option>
-                    <option value="10000">Букет цветов</option>
+                    <option value="3">Букет цветов</option>
                 </select>
 
                 <br>
                 <select id="select1">
-                    <option value="0">Выбрать</option>
+                    <option selected disabled hidden>Выбрать</option>
                     <option value="4133">Медведь</option>
                     <option value="2950">Заяц</option>
                     <option value="260">Кот</option>
@@ -31,21 +31,21 @@
                     <option value="4150">Басик</option>
                 </select>
                 
-                <input id="count" type="number" placeholder="Введите кол-во товара" onchange="calc()">
+                <input id="count" type="number" placeholder="Введите кол-во товара" onchange="calc();">
 
                 <div class="myradios" id="myradios">Доставка:<br>
-                    <label><input type="radio" name="myradio" value="200" onchange="calc()">Доставка курьером до подъезда</label><br>
-                    <label><input type="radio" name="myradio" value="300" onchange="calc()">Доставка курьером до двери</label><br>
-                    <label><input type="radio" name="myradio" value="0" onchange="calc()">Самовывоз</label>
+                    <label><input type="radio" name="myradio" value="200" onchange="calc();">Доставка курьером до подъезда</label><br>
+                    <label><input type="radio" name="myradio" value="300" onchange="calc();">Доставка курьером до двери</label><br>
+                    <label><input type="radio" name="myradio" value="0" onchange="calc();">Самовывоз</label>
                 </div>
 
                 <div class="checkboxes" id="checkboxes">Выберете услуги:
-                    <label><input type="checkbox" name="prop1" value="150" onchange="calc()"> Обертка</label>
-                    <label><input type="checkbox" name="prop2" value="40" onchange="calc()"> Открытка</label>
+                    <label><input type="checkbox" name="prop1" value="150" onchange="calc();"> Обертка</label>
+                    <label><input type="checkbox" name="prop2" value="40" onchange="calc();"> Открытка</label>
                   </div>
                 
                 <div>
-                    Стоимость заказа = <span id="result"></span>
+                    Стоимость заказа = <span id="result"> руб.</span>
                 </div>
             </form>
         </main>
