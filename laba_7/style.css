@@ -9,12 +9,14 @@ html,body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #fff;
 	font-size: 25px;
+	height: 100%;
 }
 .wrapper{
 	padding: 50px;
 	display: flex;
 	justify-content:center;
 	align-items: center;
+	htight: 100%;
 }
 @media (max-width:767px){
 	.wrapper{padding: 50px 10px;}
