@@ -11,7 +11,6 @@ html,body{
 	font-size: 25px;
 }
 .wrapper{
-	height: 100%;
 	padding: 50px;
 	display: flex;
 	justify-content:center;
