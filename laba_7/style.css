@@ -73,6 +73,7 @@ html,body{
     margin: 0px 10px;
 }
 .slider_item{
+	text-align: center;
 	padding: 0px 15px;
 }
 .slider_item img{
