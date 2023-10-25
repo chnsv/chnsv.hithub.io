@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <button>Заполнить форму</button>
+        <div class="popup">
+            <div class="popup_container">
+                <div class="popup_wrapper">
+                    <div id="myForm">
+                        <form action="#" class="form-container" method="POST">
+                            <label for="name">ФИО</label>
+                            <input type="text" id="name" name="people_name" placeholder="Введите ФИО"><br>
+                
+                            <label for="name">Е-mail</label>
+                            <input type="email" id="mail" name="people_mail" placeholder="E-mail"><br>
+                           
+                            <label for="name">Номер телефона</label>
+                            <input type="tel" id="telephon" name="people_phone" placeholder="+7-___-___-__-__"><br>
+                            
+                            <label for="name">Наименование организации</label>
+                            <input type="text" id="organiz" name="organization" placeholder="Введите организацию"><br>
+                            
+                            <label for="name">Сообщение</label>
+                            <textarea id="message" name="people_message" placeholder="Введите сообщение"></textarea><br>
+                            
+                            <input type="checkbox" required>Нажимая кнопку "Отправить" Вы даёте свое согласие с политикой обработки персональных данных.
+                            <button type="submit">Отправить</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
