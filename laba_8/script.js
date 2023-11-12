@@ -11,6 +11,9 @@ button.addEventListener("click",()=>{
 $(window).on("popstate",()=>{
   history.back();
 })
+$(window).on('popstate', function(){
+  closePopup();
+});
 
 //чтоб форма самостоятельно не отправлялась
 function handleFormSubmit(event) {
