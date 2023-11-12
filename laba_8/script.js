@@ -8,11 +8,10 @@ button.addEventListener("click",()=>{
     history.forward();
 });
 
-
-history.replaceState({opened:false},"",window.location.href);
 $(window).on("popstate",()=>{
   history.back();
 })
+
 //чтоб форма самостоятельно не отправлялась
 function handleFormSubmit(event) {
   event.preventDefault();
