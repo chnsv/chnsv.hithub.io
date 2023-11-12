@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Form</title>
-        <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="script.js" defer></script>
+
     </head>
 
     <body>
@@ -26,7 +27,7 @@
                             <textarea id="message" name="people_message" placeholder="Введите сообщение..."></textarea><br>
                             
                             <input type="checkbox" required>Нажимая кнопку "Отправить" Вы даёте свое согласие с политикой обработки персональных данных.<br>
-                            <button type="submit">Отправить</button>
+                            <button type="button" onclick="history.pushState(null,null,'page1.html')">Отправить</button>
                         </form>
 
                     </div>
