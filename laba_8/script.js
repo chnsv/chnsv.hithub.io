@@ -8,6 +8,10 @@ button.addEventListener("click",()=>{
     history.forward();
 });
 
+$(window).on('popstate', function() {
+  $('.modal').click();     
+});
+
 $(window).on("popstate",()=>{
   history.back();
 })
