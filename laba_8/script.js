@@ -1,16 +1,16 @@
-let popupBg = document.querySelector('.popup__bg');
-let popup = document.querySelector('.popup');
-let openPopupButtons = document.querySelectorAll('.open-popup');
-let closePopupButton = document.querySelector('.close-popup');
+let popupBg = document.querySelector(".popup__bg");
+let popup = document.querySelector(".popup");
+let openPopupButtons = document.querySelectorAll(".open-popup");
+let closePopupButton = document.querySelector(".close-popup");
 
 openPopupButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault(); 
-        popupBg.classList.add('active');
-        popup.classList.add('active');
-        history.pushState(null, null, 'page1.html');
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        popupBg.classList.add("active");
+        popup.classList.add("active");
+        history.pushState(null, null, "page1.html");
         history.forward();
-    })
+    });
 });
 //???
 let popupOpen = false;
@@ -41,7 +41,6 @@ $(window).on("popstate", function() {
 $(function(){
   $(".popup").submit(function(e){
     e.preventDefault();
-    
     $.ajax({
         type: "POST",
         url: "https://formcarry.com/s/mCmKrYvKIw",
@@ -74,19 +73,19 @@ $(function(){
   });
 });
 
-closePopupButton.addEventListener('click',() => {
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
+closePopupButton.addEventListener("click",() => {
+    popupBg.classList.remove("active");
+    popup.classList.remove("active");
 });
 
-document.addEventListener('click', (e) => {
+document.addEventListener("click", (e) => {
     if(e.target === popupBg) {
-        popupBg.classList.remove('active');
-        popup.classList.remove('active');
+        popupBg.classList.remove("active");
+        popup.classList.remove("active");
     }
 });
 
-document.querySelector('.popup').addEventListener('submit', function(event) {
+document.querySelector(".popup").addEventListener("submit", function(event) {
   event.preventDefault();
   const name = $("#name").val();
   const email = $("#email").val();
