@@ -2,37 +2,60 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Form</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="script.js" defer></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
     </head>
 
     <body>
-        <button>Заполнить форму</button>
-        <div class="popup">
-            <div class="popup_container">
-                <div class="popup_wrapper">
-                    <div id="myForm">
-                        <form @submit.prevent="submitForm">
-                            <input type="text" id="name" name="people_name" placeholder="Введите ФИО"><br>
-                
-                            <input type="email" id="mail" name="people_mail" placeholder="Введите E-mail"><br>
-                           
-                            <input type="tel" id="telephon" name="people_phone" placeholder="+7-___-___-__-__"><br>
-                            
-                            <input type="text" id="organiz" name="organization" placeholder="Введите организацию"><br>
-                            
-                            <textarea id="message" name="people_message" placeholder="Введите сообщение..."></textarea><br>
-                            
-                            <input type="checkbox" required>Нажимая кнопку "Отправить" Вы даёте свое согласие с политикой обработки персональных данных.<br>
-                            <button type="submit">Отправить</button>
-                        </form>
+        <button><a class="open-popup">Открыть форму</a></button>
+        <div class="popup__bg"> 
+            <form class="popup" id="myForm">
+                <svg class="close-popup" src="close.svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2982ff" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 
+                <label>
+                    <input type="text" id="name" name="name">
+                    <div class="label__text">
+                        Имя
                     </div>
-                </div>
-            </div>
-        </div>
+                </label>
+    
+                <label>
+                    <input type="email" id="email" name="email">
+                    <div class="label__text">
+                        Е-mail
+                    </div>
+                </label>
+
+                <label>
+                    <input type="tel" id="telephon" name="telephon">
+                    <div class="label__text">
+                        Номер
+                    </div>
+                </label>
+               
+                <label>
+                    <input type="text" id="organization" name="organization">
+                    <div class="label__text">
+                        Организация
+                    </div>
+                </label>
+                
+                <label>
+                    <textarea id="message" name="people_message"></textarea>
+                    <div class="label__text">
+                        Сообщение
+                    </div>
+                </label>
+                
+                <input type="checkbox" required>Нажимая кнопку "Отправить" Вы даёте свое согласие с политикой обработки персональных данных.
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div> 
     </body>
 </html>
