@@ -12,31 +12,6 @@ openPopupButtons.forEach((button) => {
         history.forward();
     });
 });
-//???
-let popupOpen = false;
-
-$(".popup-link").click(function() {
-    showPopup();
-});
-
-function showPopup() {
-    if (popupOpen) {
-        window.history.back();
-    }
-    popupOpen = true;
-    window.history.pushState("forward", null, "");
-    $(".popup").addClass("open");
-}
-
-function hidePopup() {
-    popupOpen = false;
-    $(".popup").removeClass("open");
-}
-
-$(window).on("popstate", function() {
-    hidePopup();
-});
-//??
 
 $(function(){
   $(".popup").submit(function(e){
