@@ -8,8 +8,8 @@ openPopupButtons.forEach((button) => {
         e.preventDefault();
         popupBg.classList.add("active");
         popup.classList.add("active");
-        history.pushState(null, null, "page1.html");
-        history.forward();
+        window.history.pushState(null, null, "page1.html");
+        window.history.forward();
     });
 });
 
@@ -25,21 +25,21 @@ $(function(){
         contentType: false,
         success: function(response){
           if(response.status == "success"){
-              alert("Данные отправлены, спасибо!");
+              window.alert("Данные отправлены, спасибо!");
           }
           else if(response.code === 422){
-            alert("Ошибка при отправке данных :с");
+            window.alert("Ошибка при отправке данных :с");
             $.each(response.errors, function(key) {
               $('[name="' + key + '"]').addClass('formcarry-field-error');
             });
           }
           else{
-            alert("An error occured: " + response.message);
+            window.alert("An error occured: " + response.message);
           }
         },
         error: function(jqXHR, textStatus){
           const errorObject = jqXHR.responseJSON
-          alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+          window.alert("Request failed, " + errorObject.title + ": " + errorObject.message);
         },
         complete: function(){
           document.getElementById("myForm").reset();
@@ -77,16 +77,16 @@ document.querySelector(".popup").addEventListener("submit", function(event) {
   const savedTelephon = JSON.parse(localStorage.getItem("telephon"));
   const savedOrganization = JSON.parse(localStorage.getItem("organization"));
   const savedMessage = JSON.parse(localStorage.getItem("message"));
-  console.log(savedName);
-  console.log(savedEmail);
-  console.log(savedTelephon);
-  console.log(savedOrganization);
-  console.log(savedMessage);
+  window.console.log(savedName);
+  window.console.log(savedEmail);
+  window.console.log(savedTelephon);
+  window.console.log(savedOrganization);
+  window.console.log(savedMessage);
 });
 
 $(window).on("popstate",()=>{
-  history.back();
+  window.history.back();
 })
-$(window).on('popstate', function(){
-  closePopup();
+$(window).on("popstate", function(){
+  window.closePopup();
 });
