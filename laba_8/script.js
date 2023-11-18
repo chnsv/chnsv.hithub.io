@@ -4,12 +4,12 @@ let openPopupButtons = document.querySelectorAll(".open-popup");
 let closePopupButton = document.querySelector(".close-popup");
 
 openPopupButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
+    button.addEventListener("click", function(e) {
         e.preventDefault();
         popupBg.classList.add("active");
         popup.classList.add("active");
-        history.pushState(null, null, "page1.html");
-        history.forward();
+        window.history.pushState(null, null, "page1.html");
+        window.history.forward();
     });
 });
 
@@ -25,21 +25,21 @@ $(function(){
         contentType: false,
         success: function(response){
           if(response.status == "success"){
-              alert("Данные отправлены, спасибо!");
+              window.alert("Данные отправлены, спасибо!");
           }
           else if(response.code === 422){
-            alert("Ошибка при отправке данных :с");
+            window.alert("Ошибка при отправке данных :с");
             $.each(response.errors, function(key) {
               $('[name="' + key + '"]').addClass('formcarry-field-error');
             });
           }
           else{
-            alert("An error occured: " + response.message);
+            window.alert("An error occured: " + response.message);
           }
         },
         error: function(jqXHR, textStatus){
-          const errorObject = jqXHR.responseJSON
-          alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+          const errorObject = jqXHR.responseJSON;
+          window.alert("Request failed,"+errorObject.title+":"+errorObject.message);
         },
         complete: function(){
           document.getElementById("myForm").reset();
@@ -48,12 +48,12 @@ $(function(){
   });
 });
 
-closePopupButton.addEventListener("click",() => {
+closePopupButton.addEventListener("click",function(e){
     popupBg.classList.remove("active");
     popup.classList.remove("active");
 });
 
-document.addEventListener("click", (e) => {
+document.addEventListener("click",function(e){
     if(e.target === popupBg) {
         popupBg.classList.remove("active");
         popup.classList.remove("active");
@@ -77,16 +77,16 @@ document.querySelector(".popup").addEventListener("submit", function(event) {
   const savedTelephon = JSON.parse(localStorage.getItem("telephon"));
   const savedOrganization = JSON.parse(localStorage.getItem("organization"));
   const savedMessage = JSON.parse(localStorage.getItem("message"));
-  console.log(savedName);
-  console.log(savedEmail);
-  console.log(savedTelephon);
-  console.log(savedOrganization);
-  console.log(savedMessage);
+  window.console.log(savedName);
+  window.console.log(savedEmail);
+  window.console.log(savedTelephon);
+  window.console.log(savedOrganization);
+  window.console.log(savedMessage);
 });
 
-$(window).on("popstate",()=>{
-  history.back();
-})
-$(window).on('popstate', function(){
-  closePopup();
+$(window).on("popstate",function(e){
+  window.history.back();
+});
+$(window).on("popstate", function(){
+  window.closePopup();
 });
