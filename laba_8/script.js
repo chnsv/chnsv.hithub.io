@@ -1,3 +1,5 @@
+//Время отправки показано позднее, так как исправляла ошибку в валидаторе, вы просили написать этот комментарий, чтоб не подумать, что задание просрочено
+/*global $*/
 let popupBg = document.querySelector(".popup__bg");
 let popup = document.querySelector(".popup");
 let openPopupButtons = document.querySelectorAll(".open-popup");
@@ -38,8 +40,8 @@ $(function(){
           }
         },
         error: function(jqXHR, textStatus){
-          const errorObject = jqXHR.responseJSON
-          window.alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+          const errorObject = jqXHR.responseJSON;
+          window.alert("Request failed,"+errorObject.title+":"+errorObject.message);
         },
         complete: function(){
           document.getElementById("myForm").reset();
@@ -86,7 +88,7 @@ document.querySelector(".popup").addEventListener("submit", function(event) {
 
 $(window).on("popstate",()=>{
   window.history.back();
-})
+});
 $(window).on("popstate", function(){
   window.closePopup();
 });
