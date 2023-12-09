@@ -43,48 +43,91 @@
 }
 /*Стили для лого + меню*/
 .logo{
-    float: left; /* обтекание логотипа */
+    float: left;
 }
 .logo a {
-    display: block; /* переопределение в блочный */
-}
-.nav {
-    float: right; /* обтекание логотипа */
-    margin-top: 0.40em;
-
-}
-.nav > ul > li {
-    display:inline-block; /* переопределение в строчно-блочный */
-}
-.nav > ul > li.active a{
-    background: #d0a5a5;
-    color: #ffffff;
-}
-.nav > ul > li > a {
-    display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    color: #ffffff;
-    -webkit-transition: 0.9s; /* плавный переход */
-    -moz-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
-}
-.nav > ul > li > a:hover {
-    color: #fff;
-    background: #d0a5a5;
+    display: block; 
 }
 .content{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 1000px;
+    height: 100px;
+    position:relative;
+    top: 70;
+    left: -800;
     color: #fff;
     z-index: 3;
 }
+h6{
+    opacity: 0.63;
+}
+#menu{
+    width: 60%; 
+}
+.topmenu{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute; 
+}
+.topmenu li {
+    height: auto;
+    width: 145px; 
+    float: left;  
+    text-align: center; 
+    list-style: none;  
+    padding: 0;
+    margin: 0;
+}
+.topmenu a{							
+    padding: 11px 0;  
+    text-decoration: none; 
+    color: white; 
+    display: block;
+}
+.topmenu ul:hover li{
+    display: inline-block;
+    border-bottom: #750e0e;
+}
+.topmenu a:after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #750e0e;
+
+}
+.topmenu a:hover:after,
+.topmenu a:focus:after {
+    width: 100%;
+}
+.topmenu li ul{
+    display: none;
+    height: auto;									
+    margin: 0; 
+    padding: 0; 
+}    
+.topmenu li:hover ul{
+    display: block;
+}
+.topmenu li ul li{
+    background-color: #903131;
+}    
+.topmenu li ul li a:hover{
+    background-color: #750e0e;
+}
+/*Кнопка Тарифы*/
+.button {
+    transition-duration: 0.4s;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border: 2px solid #750e0e;
+}
+  
+.button:hover {
+    background-color: #750e0e;
+    color: white;
+}
+/**/
