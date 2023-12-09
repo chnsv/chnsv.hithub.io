@@ -131,3 +131,95 @@ h6{
     color: white;
 }
 /**/
+img {
+    width: 30%;
+    max-width: 800px;     
+}
+.left {
+    text-align: left;
+  }
+
+.competencies-row {
+    margin-bottom: 0;
+}
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.row {
+    margin-left: 15%;
+    margin-right: 5%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    margin-right: 25%;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.competency-body {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4f5a73;
+}
+
+.competencies h2 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #050c33;
+    margin: 0 0 20px;
+}
+h2, .h2 {
+    font-size: 34px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+.competency {
+    margin-bottom: 60px;
+}
+.competency-icon {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#home_page {
+    flex-grow: 4;
+    padding: 5px 20px 5px 5px;
+    width: 372px;
+    height: 57px;
+    flex-shrink: 0;
+    align-self:flex-end;
+    text-align: right;
+    position: static;
+}
+.competency-icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    background: url(pic/icon-bg.svg) no-repeat center;
+    background-size: contain;
+    left: -54px;
+    bottom: -px;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .filter-wrapper:before, .filter-wrapper:after {
+    content: " ";
+    display: table;
+}
+/**/
