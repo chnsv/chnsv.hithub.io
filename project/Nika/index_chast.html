@@ -1,0 +1,501 @@
+<html lang ="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="script.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <section class="home">
+            <div class="home_video">
+                <video class="video_bg" src="pic/video.mp4" autoplay loop muted></video>
+            </div>
+
+            <div class="home_content">
+                <div id="menu" class="block-menu">
+                    <div class="logo">
+                        <img src="pic/logo.svg" width="138px" height="20px">
+                    </div>
+                    <div class="menu-mob">
+                        <div class="logo">
+                            <img src="pic/logo.svg" width="138px" height="20px">
+                        </div>
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="burger"></label>
+                        <ul class="menu-list">
+                            <li><a href="#" class="menu-item">ПОДДЕРЖКА DRUPAL</a><li>
+                            <li><a href="#" class="menu-item">АДМИНИСТРИРОВАНИЕ</a>
+                                <ul class="menu-l">
+                                    <li><a href="#">МИГРАЦИЯ</a></li>
+                                    <li><a href="#">БЭКАПЫ</a></li>
+                                    <li><a href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                                    <li><a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                                    <li><a href="#">ПЕРЕЕЗД НА HTTPS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item">ПРОДВИЖЕНИЕ</a></li>
+                            <li><a href="#" class="menu-item">РЕКЛАМА</a></li>
+                            <li><a href="#" class="menu-item">О НАС<i class="fa fangle-down"></i></a>
+                                <ul class="menu-l">
+                                    <li><a href="#">КОМАНДА</a></li>
+                                    <li><a href="#">DRUPALGIVE</a></li>
+                                    <li><a href="#">БЛОГ</a></li>
+                                    <li><a href="#">КУРСЫ DRUPAL</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item">ПРОЕКТЫ</a></li>
+                            <li><a href="#" class="menu-item">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="topmenu">
+                        <li><a href="#">ПОДДЕРЖКА DRUPAL</a></li>
+                        <li><a href="#">АДМИНИСТРИРОВАНИЕ<i class="fa fangle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">МИГРАЦИЯ</a></li>
+                                <li><a href="#">БЭКАПЫ</a></li>
+                                <li><a href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                                <li><a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a></li>
+                                <li><a href="#">ПЕРЕЕЗД НА HTTPS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ПРОДВИЖЕНИЕ</a></li>
+                        <li><a href="#">РЕКЛАМА</a></li>
+                        <li><a href="#">О НАС<i class="fa fangle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">КОМАНДА</a></li>
+                                <li><a href="#">DRUPALGIVE</a></li>
+                                <li><a href="#">БЛОГ</a></li>
+                                <li><a href="#">КУРСЫ DRUPAL</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ПРОЕКТЫ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <p><b><h1>Поддержка<br> сайтов на Drupal</h1></b>
+                    <h6>Сопровождение и поддержка сайтов<br> на CMS Drupal любых версий и запущенности</h6></p>
+                    <button class="button">ТАРИФЫ</button>
+                </div>    
+
+                <!--Комп версия-->
+                <div class="container text-center">
+                    <div class="row justify-content-end">
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title1">#1<img alt="img1" src="pic/cup.png"></div>
+                                <div class="men-text">Drupal-разработчик в России по версии Рейтинка Рунета</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title">3+</div>
+                                <div class="men-text">Средний опыт специалистов более 3 лет</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title">14</div>
+                                <div class="men-text">лет опыта в сфере Drupal</div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container1 text-center">
+                    <div class="row justify-content-end">
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title">50+</div>
+                                <div class="men-text">модулей и тем в формате DrupalGive</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title">90 000+</div>
+                                <div class="men-text">часов поддержки сайтов на Drupal</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block">
+                                <div class="men-title">300+</div>
+                                <div class="men-text">Проектов на поддержке</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Моб версия-->
+                <div class="container2 text-center">
+                    <div class="row justify-content-end">
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title1">#1<img alt="img1" src="pic/cup.png"></div>
+                                <div class="men-text">Drupal-разработчик в России по версии Рейтинка Рунета</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title">3+</div>
+                                <div class="men-text">Средний опыт специалистов более 3 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container3 text-center">
+                    <div class="row justify-content-end">
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title">14</div>
+                                <div class="men-text">лет опыта в сфере Drupal</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title">50+</div>
+                                <div class="men-text">модулей и тем в формате DrupalGive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container4 text-center">
+                    <div class="row justify-content-end">
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title">90 000+</div>
+                                <div class="men-text">часов поддержки сайтов на Drupal</div>
+                            </div>
+                        </div>
+                        <div class="col-6 men-col">
+                            <div class="men-block1">
+                                <div class="men-title">300+</div>
+                                <div class="men-text">Проектов на поддержке</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="Tarif">
+            <div class="Tarif_container">
+                <div class="Tarif_title">Тарифы</div>
+                <div class="Tarif_items">
+                    <div class="Tarif_item-box1">
+                        <div class="Tarif_price">Стартовый</div>
+                        <ul class="Tarif_benefits">
+                            <li class="Tarif-benefits-item">Консультации и работы по SEO</li>
+                            <li class="Tarif-benefits-item">Услуги дизайнера</li>
+                            <li class="Tarif-benefits-item">Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                            <li class="Tarif-benefits-item">Предоплата от 6 000 рублей в месяц</li>
+                        </ul>
+                        <a href="#"><button class="btn btn--primary btn--large">Свяжитесь с нами!</button></a>
+                    </div>
+                    <div class="Tarif_item-box2">
+                        <div class="Tarif_price">Бизнес</div>
+                        <ul class="Tarif_benefits">
+                            <li class="Tarif-benefits-item">Консультации и работы по SEO</li>
+                            <li class="Tarif-benefits-item">Услуги дизайнера</li>
+                            <li class="Tarif-benefits-item">Высокое время реакции - до 2 рабочих дней</li>
+                            <li class="Tarif-benefits-item">Неиспользованные оплаченные часы не переносятся</li>
+                            <li class="Tarif-benefits-item">Предоплата от 30 000 рублей в месяц</li>
+                        </ul>
+                        <a href="#"><button class="btn btn--primary1 btn--large">Свяжитесь с нами!</button></a>
+                    </div>
+                    <div class="Tarif_item-box3">
+                        <div class="Tarif_price">VIP</div>
+                        <ul class="Tarif_benefits">
+                            <li class="Tarif-benefits-item">Консультации и работы по SEO</li>
+                            <li class="Tarif-benefits-item">Услуги дизайнера</li>
+                            <li class="Tarif-benefits-item">Максимальное время реакции - в день обращения</li>
+                            <li class="Tarif-benefits-item">Неиспользованные оплаченные часы не переносятся</li>
+                            <li class="Tarif-benefits-item">Предоплата от 270 000 рублей в месяц</li>
+                        </ul>
+                        <a href="#"><button class="btn btn--primary btn--large">Свяжитесь с нами!</button></a>
+                    </div>
+                </div>
+                <div class="Tarif_conditions">Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!</div>
+                <div class="Tarif_conditions-indiv">Получить индивидуальный тариф</div>
+            </div>
+        </div>
+        
+        <section class="views-element-container block block-views block-views-blocktestimonials-block-1 clearfix" id="block-views-block-testimonials-block-1">
+            <h2 class="block-title">Отзывы</h2>
+            <div class="form-group">
+                <div class="container view view-testimonials view-id-testimonials view-display-id-block_1 js-view-dom-id-785d5d6561e9f729b1a0d40427e2da2a6b39023dc72dff7ac073e2d691c309bc">
+                    <div class="view-content">
+                        <div class="slick blazy slick--view slick--view--testimonials slick--view--testimonials--block-1 slick--view--testimonials-block-block-1 is-b-captioned slick--optionset--reviews is-blazy slick--initialized" data-blazy data-once="blazy slick">
+                            <div id="slick-5e06ab31973" data-slick="{&quot;count&quot;:8,&quot;total&quot;:8,&quot;adaptiveHeight&quot;:true,&quot;centerMode&quot;:false,&quot;fade&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;}" class="slick__slider slick-initialized slick-slider">
+                                <div aria-live="polite" class="slick-list draggable" style="height: 2786.93px;">
+                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 368px;">
+                                        <div class="slick__slide slide slide--0 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 46px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--1 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 46px; position: relative; left: -46px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--2 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 46px; position: relative; left: -92px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--3 slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 46px; position: relative; left: -138px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--4 slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 46px; position: relative; left: -184px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--5 slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 46px; position: relative; left: -230px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--6 slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 46px; position: relative; left: -276px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick__slide slide slide--7 slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide70" style="width: 46px; position: relative; left: -322px; top: 0px; z-index: 998; opacity: 0;">
+                                            <div class="views-field views-field-field-project-logo">
+                                                <div class="field-content">
+                                                    <img loading="lazy" src="pic/l.png" width="78" height="46" alt="Ciel parfum" typeof="foaf:Image">
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-text">
+                                                <div class="field-content">
+                                                    Долгие поиски единственного и неповторимого мастера на<br> многострадальный сайт www.cielparfum.com, который был <br>собран крайне некомпетентным программистом и раз в<br> месяц стабильно грозил погибнуть, привели меня на сайт <br>и, в итоге, к ребятам из Drupal-coder. И вот уже <br>практически полгода как не проходит и дня, чтобы я не <br>поудивлялась и не порадовалась своему везению! <br>Починили все, что не работало - от поиска до отображения <br>меню. Провели редизайн - не отходя от желаемого, но со <br>своими существенными и качественными дополнениями. <br>Осуществили ряд проектов - конкурсы, тесты и тд. А уж <br>мелких починок и доработок - не счесть! И главное - все <br>качественно и быстро (не взирая на не самый "быстрый" <br>тариф). Есть вопросы - замечательный Алексей всегда <br>подскажет, поддержит, отремонтирует и/или просто <br>сделает с нуля. Есть задумка для реализации - <br>замечательный Сергей обсудит и предложит идеальный <br>вариант. Есть проблема - замечательные Надежда и Роман <br>починят, поправят, сделают! Ребята доказали, что эта CMS - <br>мощная и грамотная система управления. Надеюсь, что <br>наше сотрудничество затянется надолго! Спасибо!!!
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-report-author">
+                                                <div class="field-content">
+                                                    С уважением, Наталья Сушкова руководитель Отдела веб-<br>проектов Группы компаний «Си Эль <br>парфюм»
+                                                    <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav role="navigation" class="slick__arrow">
+                                <div class="slick__arrow-wrapper">
+                                    <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" style>Prev</button>
+                                    <span class="slick-slide-num">
+                                        <span class="slick-slide-num-current">01</span>/08
+                                    </span>
+                                    <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" style>Next</button>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="block-work">
+            <div class="block-work-content">
+                <div class="block-work-title">
+                    С нами работают
+                </div>
+                <div class="block-work-text">
+                    Десятки компаний доверяют нам самое ценное, что у них есть в интернета - свои<br> сайты. Мы делаем все, чтобы наше сотрудничество было долгим.
+                </div>
+            </div>
+            <div class="slaider block-work-slide">
+                <div class="sl"><img src="/pic/slaid/1.png"></div>
+                <div class="sl"><img src="/pic/slaid/2.png"></div>
+                <div class="sl"><img src="/pic/slaid/3.png"></div>
+                <div class="sl"><img src="/pic/slaid/4.png"></div>
+                <div class="sl"><img src="/pic/slaid/5.png"></div>
+                <div class="sl"><img src="/pic/slaid/6.jpg"></div>
+                <div class="sl"><img src="/pic/slaid/7.png"></div>
+                <div class="sl"><img src="/pic/slaid/8.png"></div>
+                <div class="sl"><img src="/pic/slaid/9.png"></div>
+                <div class="sl"><img src="/pic/slaid/10.jpg"></div>
+            </div>
+            <div class="slaider block-work-slide1">
+                <div class="sl"><img src="/pic/slaid/1.png"></div>
+                <div class="sl"><img src="/pic/slaid/3.png"></div>
+                <div class="sl"><img src="/pic/slaid/5.png"></div>
+                <div class="sl"><img src="/pic/slaid/10.jpg"></div>
+                <div class="sl"><img src="/pic/slaid/2.png"></div>
+                <div class="sl"><img src="/pic/slaid/9.png"></div>
+                <div class="sl"><img src="/pic/slaid/6.jpg"></div>
+                <div class="sl"><img src="/pic/slaid/4.png"></div>
+                <div class="sl"><img src="/pic/slaid/8.png"></div>
+                <div class="sl"><img src="/pic/slaid/7.png"></div>
+            </div>
+        </div>        
+        <script>
+            $(document).ready(function(){
+                $('.block-work-slide').slick({
+                    infinite: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    centerMode: true,
+                    centerPadding: '100px',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                centerPadding: '40px',
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerPadding: '40px',
+                                slidesToShow: 2
+                            }
+                        }
+                ]
+                });
+                $('.block-work-slide1').slick({
+                    infinite: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                centerPadding: '40px',
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerPadding: '40px',
+                                slidesToShow: 2
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
