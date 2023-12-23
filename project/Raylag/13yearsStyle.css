@@ -58,3 +58,28 @@
 .bl13years{
     padding-bottom: 50px;
 }
+.img-team{
+    width: 280px;
+    height: 280px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .block-col-13y{
+        width: 50%;
+    }
+    .block-img-13y{
+        text-align: center;
+    }
+    .block-main-th{
+        text-align: center;
+    }
+    .block-col-team{
+        width: 50%;
+        text-align: center;
+    }
+    .img-team{
+        width: 140px;
+        height: 140px;
+    }
+}
