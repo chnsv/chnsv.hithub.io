@@ -1,0 +1,44 @@
+.block-col-13y{
+    text-align: left;
+    background: url(/themes/custom/bootstrap_dc/css/../images/icon-bg.svg) no-repeat center;   
+    background-size: cover;
+}
+.block-col-team{
+    text-align: left;
+}
+.block-col-team-h{
+    text-align: left;
+}
+.block-team{
+    margin-top: 100px;
+}
+.team{
+    margin-top: 300px;
+}
+.team_h{
+    margin-top: 300px;
+}
+.rowteam{
+    padding-top: 500px;
+}
+.block-header-team{
+    font-weight: bold;
+}
+.block-header-team-h{
+    font-weight: bold;
+    font-size: 40px;
+}
+.block-header-13y{
+    font-weight: bold;
+    font-size: 40px;
+}
+.block-text-team{
+    height: 100px;
+    line-height: 20px;
+}
+.text-center-team {
+    text-align: center!important;
+}
+.text-center-team-h {    
+    text-align: center!important;
+}
