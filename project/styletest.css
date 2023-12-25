@@ -967,7 +967,7 @@ h6{
 }
 .case2-bg{
     height: 475px;
-    background: linear-gradient(transparent,black),url(pic/case2.png) no-repeat;
+    background: linear-gradient(transparent,black),url(pic/case2.jpg) no-repeat;
     background-size:cover;
     border-radius: 5px;
 }
@@ -987,7 +987,7 @@ h6{
 }
 .case3-bg{
     height: 475px;
-    background: linear-gradient(transparent,black),url(pic/case3.png) no-repeat;
+    background: linear-gradient(transparent,black),url(pic/case3.jpg) no-repeat;
     background-size:cover;
     text-align: left;
     border-radius: 5px;
@@ -1017,7 +1017,7 @@ h6{
 }
 .case4-bg{
     height: 475px;
-    background: linear-gradient(transparent,black),url(pic/case4.png) no-repeat;
+    background: linear-gradient(transparent,black),url(pic/case4.jpg) no-repeat;
     background-size:cover;
     text-align: left;
     border-radius: 5px;
