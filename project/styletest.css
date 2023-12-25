@@ -370,7 +370,6 @@ h6{
         z-index: 101;
 
     }
-    /*ПОФИКСИТЬ*/
     .men-title{
         font-size: 20px;
         font-weight: 700;
@@ -733,12 +732,7 @@ h6{
     border: 1px solid #dedede;
     margin-right: 10px;
 }
-
-
-
-
-
-
+/**/
 .block-col-13y{
     text-align: left;
     background: url(/themes/custom/bootstrap_dc/css/../images/icon-bg.svg) no-repeat center;   
@@ -803,7 +797,6 @@ h6{
     width: 280px;
     height: 280px;
 }
-
 @media screen and (max-width: 480px) {
     
     .block-col-13y{
@@ -824,7 +817,6 @@ h6{
         height: 140px;
     }
 }
-
 
 .block-col{
     height: 100%;
@@ -1080,7 +1072,6 @@ h6{
 }
 .col-mail{
     width: 24px;
-    
 }
 .footer-form{
     align-items: center;
