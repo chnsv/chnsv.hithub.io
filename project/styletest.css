@@ -736,7 +736,7 @@ h6{
 .block-col-13y{
     text-align: left;
     background: url(pic/icon-bg.svg) no-repeat center;   
-    background-size: cover;
+    background-size: contain;
 }
 .block-col-team{
     text-align: left;
