@@ -86,7 +86,7 @@ h6{
 }
 .topmenu li {
     height: auto;
-    width: 120px; 
+    width: 130px; 
     float: left;  
     list-style: none;
 }
@@ -95,6 +95,7 @@ h6{
     text-decoration: none; 
     color: white;
     display: block;
+    text-align: start;
 }
 .topmenu ul:hover li{
     display: inline-block;
@@ -115,7 +116,7 @@ h6{
     display: none;
     height: auto;
     padding: 0;
-    margin: 0;									
+    margin: 0;
 }    
 .topmenu li:hover ul{
     display: block;
@@ -168,7 +169,7 @@ h6{
 /*БЛОК СПРАВА В ШАПКЕ*/
 .men-title{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 10px;
 }
 .men-title1{
@@ -203,7 +204,7 @@ h6{
     width: 100%;
     position:relative;
     top:300;
-    right: 364;
+    right: 275;
     
 }
 .men-text {
@@ -251,7 +252,7 @@ h6{
         height: 100%;
     }
     .home video{
-        height: 1000px;
+        height: 2000px;
         object-fit: cover;
     }
     .burger-checkbox {
@@ -307,7 +308,7 @@ h6{
         position: fixed;
         display: none;
         margin: 0;
-        background: rgb(135, 135, 46);
+        background: rgb(0, 0, 0);
         list-style-type: none;
         transform: translateY(100%); 
         transition: .3s;
@@ -359,16 +360,16 @@ h6{
         height: 100px;
         position:relative;
         top: 10;
-        left: 100;
+        left: 120;
         color: #fff;
         z-index: 3;
+        text-align: center;
     }
     .logo{
         position: fixed;
         bottom: 10;
         left: 0;
         z-index: 101;
-
     }
     .men-title{
         font-size: 20px;
@@ -417,7 +418,7 @@ h6{
         background-color: #ffffff00;
         color: rgb(255, 255, 255);
         border: 2px solid #750e0e;
-        margin-left: 70;
+        margin-left: 40;
         display: block;
     }
     .button:hover {
@@ -433,6 +434,7 @@ h6{
     background-image: url(pic/fon.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    margin-top: 100px;
 }
 .Tarif::before{
     position: absolute;
@@ -442,7 +444,6 @@ h6{
     top: -120px;
     z-index: -2;
 }
-
 .Tarif_container{
     max-width: 1210px;
     padding: 0 10px;
@@ -467,7 +468,7 @@ h6{
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    background: #f1f1f1;
+    background: #fbfbfb;
 }
 .Tarif_item-box2{
     transform: translate(0px,-18px);
@@ -486,7 +487,7 @@ h6{
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    background: #f1f1f1;
+    background: #fbfbfb;
 }
 .Tarif_item-box:nth-child(odd){
     margin-top: 25px;
@@ -735,8 +736,8 @@ h6{
 /**/
 .block-col-13y{
     text-align: left;
-    background: url(pic/icon-bg.svg) no-repeat center;   
-    background-size: contain;
+    background: url(/themes/custom/bootstrap_dc/css/../images/icon-bg.svg) no-repeat center;   
+    background-size: cover;
 }
 .block-col-team{
     text-align: left;
@@ -748,20 +749,18 @@ h6{
     margin-top: 100px;
 }
 .team{
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .team_h{
-    margin-top: 300px;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 .rowteam{
     padding-top: 500px;
 }
-.block-header-team{
-    font-weight: bold;
-}
 .block-header-team-h{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1000px;
 }
 .block-header-13y{
     font-weight: bold;
@@ -797,8 +796,109 @@ h6{
     width: 280px;
     height: 280px;
 }
+.block-img-13y:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 115px;
+    height: 70px;
+    background: url(pic/icon-bg.svg) no-repeat center;
+    background-size: contain;
+}
+.block-img-th:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 115px;
+    height: 70px;
+    background: url(pic/icon-bg.svg) no-repeat center;
+    background-size: contain;
+}
+.container-faq {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 100%;
+}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #ff3300;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #ffffff;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #ff5353;
+}
+.accordion a:hover::after {
+  border: 1px solid #000000;
+}
+.accordion a.active {
+  color: #ff5353;
+  border-left: 1px solid #ff3300;
+  border-right: 1px solid #ff3300;
+  border-top: 1px solid #ff3300;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+}
+.accordion a::after {
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  text-align: center;
+}
+.accordion a.active::after {
+  color: #000000;
+  border: 1px solid #000000;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #ff3300;
+  border-left: 1px solid #ff3300;
+  border-right: 1px solid #ff3300;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
 @media screen and (max-width: 480px) {
-    
     .block-col-13y{
         width: 50%;
     }
@@ -815,9 +915,17 @@ h6{
     .img-team{
         width: 140px;
         height: 140px;
+    }  
+    .block-img-th:before {
+        left: 130px;
+        margin: 10px;
     }
+   
 }
 
+.page_2{
+    padding: 130px;
+}
 .block-col{
     height: 100%;
 	padding: 5px;
@@ -839,12 +947,14 @@ h6{
     height:100%;
     z-index: 1;
 }
+
 .block-title{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 20px;
-    color: #050c33;
+    color: hsl(232, 78%, 9%);
     margin-bottom: 15px;
     z-index: 3;
+    text-align: start;
 }
 .block-number{
     width: 100%;
@@ -853,10 +963,13 @@ h6{
     color: #a6aab1;
     margin-bottom: 20px;
     z-index: 3;
+    text-align: start;
 }
 .block-text{
     z-index: 3;
     text-align: left;
+    color: #1e2653;
+    opacity: 0.94;
 }
 .block-img{
     position:absolute;
@@ -866,8 +979,8 @@ h6{
 }
 .Laptop{
     padding-top: 20px;
-    background: url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/drupal-logo-2.svg") no-repeat right bottom;
-    background-color: #050c33;
+    background: url("pic/drupal-logo-2.svg") no-repeat right bottom;
+    background-color: #040613;
     background-size: contain;
     color: aliceblue;
     height: 650px;
@@ -876,7 +989,10 @@ h6{
 .Laptop-title{
     font-weight: 700;
     font-size: 42px;
-    margin-bottom: 65px;
+    text-align: start;
+    margin-bottom: 40px;
+    margin-left: 800px;
+    margin-top: 90px;
 }
 .Laptop-col{
     margin-bottom: 15px;
@@ -895,6 +1011,14 @@ h6{
     width: 250px;
     max-width: 100%;
 }
+.Laptop-text{
+    opacity: 0.73;
+    text-align: start;
+}
+.Laptop-color{
+    text-align: start;
+    color: #e61414;
+}
 .laptoppng{
     position:relative;
     top:50px;
@@ -902,7 +1026,6 @@ h6{
     height: auto;
     transform: translateY(3%);
     top: -350px;
-    
 }
 .laptoppng img{
     width:625px;
