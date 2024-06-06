@@ -1,0 +1,37 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    color: #333; /* Цвет текста */
+    background-color: #ebd6d6; /* Фон */
+    line-height: 1.6; /* Высота строки */
+    padding: 20px; /* Отступы вокруг содержимого */
+    box-sizing: border-box; /* Включаем границы и отступы в общую ширину/высоту */
+}
+
+h1 {
+    color: #b580da; /* Цвет заголовка */
+    font-size: 32px; /* Размер шрифта */
+    margin-bottom: 10px; /* Отступ под заголовок */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: none; /* Скрыть текст изначально */
+}
+
+button {
+    background-color: #eba9dc; /* Золотистый фон */
+    color: #b580da; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Поле вокруг текста */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Изменяем курсор на указатель при наведении */
+    transition: background-color 0.3s ease; /* Анимация изменения фона */
+}
+
+button:hover {
+    background-color: #EAECEE; /* Темнее золотистый фон при наведении */
+}
+
+/* Конец стилей */
